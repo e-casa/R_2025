@@ -1,0 +1,317 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Início",
+    "section": "",
+    "text": "Bem-vindos! Aqui você encontra aulas, materiais, entregas e links da disciplina. Use os botões abaixo para navegar rápido.\n\n▶️ Ver Aulas 📚 Materiais 📝 Avaliação"
+  },
+  {
+    "objectID": "index.html#quarto.yml",
+    "href": "index.html#quarto.yml",
+    "title": "Estrutura do projeto",
+    "section": "",
+    "text": "project:\n  type: website\n  output-dir: docs\n\nwebsite:\n  title: \"R para Gestão de Dados — FGV\"\n  navbar:\n    logo: images/foto.jpg\n    background: light\n    search: false\n    left:\n      - text: \"Início\"\n        file: index.qmd\n      - text: \"Aulas\"\n        file: aulas.qmd\n      - text: \"Materiais\"\n        file: materiais.qmd\n      - text: \"Avaliação\"\n        file: avaliacao.qmd\n    right:\n      - icon: instagram\n        href: https://www.instagram.com/professor.robaina\n        aria-label: Instagram\n      - icon: linkedin\n        href: https://www.linkedin.com/in/diogo.robaina\n        aria-label: LinkedIn\n  page-footer:\n    center: \"© ?meta:year FGV — Disciplina de R | Prof. Robaina | Contato: nome@fgv.br\"\n\nformat:\n  html:\n    theme: flatly\n    css: styles.css\n    toc: true\n    smooth-scroll: true\n\nmetadata-files: []\n```yaml\nproject:\n  type: website\n  output-dir: docs   # facilita publicar no GitHub Pages\n\nwebsite:\n  title: \"Portfólio – Nome do Aluno\"\n  navbar:\n    logo: images/foto.jpg\n    background: light\n    search: false\n    left:\n      - text: \"Início\"\n        file: index.qmd\n      - text: \"Sobre\"\n        file: sobre.qmd\n      - text: \"Blog\"\n        file: blog.qmd\n    right:\n      - icon: instagram\n        href: https://www.instagram.com/professor.robaina\n        aria-label: Instagram\n      - icon: linkedin\n        href: https://www.linkedin.com/in/diogo.robaina\n        aria-label: LinkedIn\n  page-footer:\n    center: \"© ?meta:year Nome do Aluno — Portfólio\"\n\nformat:\n  html:\n    theme: flatly     # experimente: cosmo, minty, darkly, quartz, vapor, zephyr\n    css: styles.css   # aplica as personalizações abaixo\n    toc: true\n    smooth-scroll: true\n\nmetadata-files: []"
+  },
+  {
+    "objectID": "index.html#styles.css",
+    "href": "index.html#styles.css",
+    "title": "Estrutura do projeto",
+    "section": "",
+    "text": ":root {\n  --brand: #0f4c81;\n  --brand-2: #f39c12;\n  --bg-soft: #f7f9fc;\n}\nbody { background: var(--bg-soft); }\n.navbar { border-bottom: 3px solid var(--brand); }\n.navbar-brand, .navbar-nav .nav-link { font-weight: 600; }\n.card.project { border-radius: 16px; box-shadow: 0 6px 16px rgba(0,0,0,.08); border: 1px solid rgba(0,0,0,.07); }\n.card.project .card-title { color: var(--brand); }\n.card.project a.btn-primary { background: var(--brand); border-color: var(--brand); }\n.card.project a.btn-secondary { color: #222; border-color: #ddd; }\n.section-hero { background: linear-gradient(135deg, var(--brand) 0%, #1f6fb2 100%); color: #fff; padding: 64px 0; border-radius: 18px; }\n.kpi { background: #fff; border-radius: 14px; padding: 18px 22px; border: 1px solid #eee; box-shadow: 0 4px 12px rgba(0,0,0,.05); }\n/* CTAs grandes */\n.btn-cta { font-weight: 700; padding: 12px 18px; border-radius: 14px; border: 2px solid var(--brand); }\n.btn-cta-primary { background: var(--brand); color: #fff; }\n.btn-cta-outline { background: transparent; color: var(--brand); }\n\n/* Grade de aulas */\n.aula-card { border-radius: 16px; border: 1px solid #eaeaea; box-shadow: 0 4px 12px rgba(0,0,0,.06); padding: 16px; background: #fff; }\n.aula-card h5 { color: var(--brand); margin-bottom: 8px; }\n.aula-actions .btn { margin-right: 8px; margin-bottom: 8px; }\n```css\n/* Paleta & tipografia */\n:root {\n  --brand: #0f4c81;              /* azul escuro */\n  --brand-2: #f39c12;            /* destaque */\n  --bg-soft: #f7f9fc;\n}\n\nbody { background: var(--bg-soft); }\n\n.navbar { border-bottom: 3px solid var(--brand); }\n\n.navbar-brand, .navbar-nav .nav-link {\n  font-weight: 600;\n}\n\n/* Cards de projetos */\n.card.project {\n  border-radius: 16px;\n  box-shadow: 0 6px 16px rgba(0,0,0,.08);\n  border: 1px solid rgba(0,0,0,.07);\n}\n.card.project .card-title { color: var(--brand); }\n.card.project a.btn-primary {\n  background: var(--brand);\n  border-color: var(--brand);\n}\n.card.project a.btn-secondary {\n  color: #222;\n  border-color: #ddd;\n}\n\n/* Seções destacadas */\n.section-hero {\n  background: linear-gradient(135deg, var(--brand) 0%, #1f6fb2 100%);\n  color: #fff;\n  padding: 64px 0;\n  border-radius: 18px;\n}\n\n.kpi {\n  background: #fff;\n  border-radius: 14px;\n  padding: 18px 22px;\n  border: 1px solid #eee;\n  box-shadow: 0 4px 12px rgba(0,0,0,.05);\n}"
+  },
+  {
+    "objectID": "index.html#index.qmd",
+    "href": "index.html#index.qmd",
+    "title": "Estrutura do projeto",
+    "section": "",
+    "text": "---\ntitle: \"Início\"\nyear: 2025\npage-layout: article\nimage: images/foto.jpg\n---\n\n&lt;div class=\"section-hero\"&gt;\n\n# 📊 **R para Gestão de Dados — FGV**\n\nBem-vindos! Aqui você encontra **aulas, materiais, entregas e links** da disciplina. Use os botões abaixo para navegar rápido.\n\n&lt;div class=\"mt-3\"&gt;\n  &lt;a class=\"btn btn-cta btn-cta-primary\" href=\"aulas.html\"&gt;▶️ Ver Aulas&lt;/a&gt;\n  &lt;a class=\"btn btn-cta btn-cta-outline\" href=\"materiais.html\"&gt;📚 Materiais&lt;/a&gt;\n  &lt;a class=\"btn btn-cta btn-cta-outline\" href=\"avaliacao.html\"&gt;📝 Avaliação&lt;/a&gt;\n&lt;/div&gt;\n\n&lt;/div&gt;\n\n## 🎯 Objetivo da disciplina\nCapacitar o estudante a **importar, limpar, analisar e comunicar dados** em R, com foco em aplicações de gestão pública e negócios.\n\n## 🗓️ Cronograma resumido\n| Semana | Tema | Entrega |\n|---|---|---|\n| 01 | Setup, RStudio/Quarto, `tidyverse` | — |\n| 02 | Importação (CSV, Excel, APIs) | Exercício 1 |\n| 03 | Limpeza e *wrangling* (`dplyr`, `tidyr`) | Exercício 2 |\n| 04 | Visualização (`ggplot2`) | *Mini-dashboard* |\n| 05 | Estatística (médias, testes t, ANOVA) | Lista teórica |\n| 06 | Regressão e predição | Projeto parcial |\n| 07 | Quarto + Data Storytelling | Projeto final |\n\n## 🔗 Links rápidos\n- Instagram: [@professor.robaina](https://www.instagram.com/professor.robaina)\n- LinkedIn: [diogo.robaina](https://www.linkedin.com/in/diogo.robaina)\n- Repositório base (placeholder): &lt;https://github.com/fgv-r/disciplina&gt;\n\n## ❓ Perguntas frequentes\n- **Preciso saber programar?** Não. Começamos do zero.\n- **Ferramentas?** R, RStudio e Quarto.\n- **Posso usar Python?** Sim, em projetos finais, desde que a narrativa esteja em Quarto."
+  },
+  {
+    "objectID": "index.html#markdown",
+    "href": "index.html#markdown",
+    "title": "Estrutura do projeto",
+    "section": "",
+    "text": "title: “Início” year: 2025 image: images/foto.jpg page-layout: article ——————–"
+  },
+  {
+    "objectID": "index.html#destaques",
+    "href": "index.html#destaques",
+    "title": "Estrutura do projeto",
+    "section": "🌟 Destaques",
+    "text": "🌟 Destaques\n\n\nProjetos publicados: 5\n\n\nDashboards interativos: 3\n\n\nÁreas de interesse: Educação, Finanças, Setor Público"
+  },
+  {
+    "objectID": "index.html#projetos-recentes",
+    "href": "index.html#projetos-recentes",
+    "title": "Estrutura do projeto",
+    "section": "💼 Projetos recentes",
+    "text": "💼 Projetos recentes\n\n\n&lt;div class=\"card project\"&gt;\n  &lt;img src=\"images/foto.jpg\" class=\"card-img-top\" alt=\"thumb\"/&gt;\n  &lt;div class=\"card-body\"&gt;\n    &lt;h5 class=\"card-title\"&gt;Dashboard de Indicadores Municipais&lt;/h5&gt;\n    &lt;p class=\"card-text\"&gt;Exploração de PIB, IDHM e frota veicular com filtros regionais em Quarto + Leaflet.&lt;/p&gt;\n    &lt;a class=\"btn btn-primary\" href=\"#\"&gt;Ver projeto&lt;/a&gt;\n    &lt;a class=\"btn btn-secondary\" href=\"#\"&gt;Código&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"card project\"&gt;\n  &lt;img src=\"images/foto.jpg\" class=\"card-img-top\" alt=\"thumb\"/&gt;\n  &lt;div class=\"card-body\"&gt;\n    &lt;h5 class=\"card-title\"&gt;Analisador de Sentimentos&lt;/h5&gt;\n    &lt;p class=\"card-text\"&gt;Classificação de polaridade de notícias usando Python e scikit-learn.&lt;/p&gt;\n    &lt;a class=\"btn btn-primary\" href=\"#\"&gt;Ver projeto&lt;/a&gt;\n    &lt;a class=\"btn btn-secondary\" href=\"#\"&gt;Código&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/div&gt;"
+  },
+  {
+    "objectID": "index.html#habilidades",
+    "href": "index.html#habilidades",
+    "title": "Estrutura do projeto",
+    "section": "🧠 Habilidades",
+    "text": "🧠 Habilidades\n\nLinguagens: R, Python, SQL\nVisualização: Quarto, ggplot2, Plotly, Power BI\nDados: Web scraping, limpeza, modelagem"
+  },
+  {
+    "objectID": "index.html#contato",
+    "href": "index.html#contato",
+    "title": "Estrutura do projeto",
+    "section": "📬 Contato",
+    "text": "📬 Contato\n\nInstagram: @professor.robaina\nLinkedIn: diogo.robaina\nE-mail: nome@exemplo.com\n\n\n---\n\n## `sobre.qmd`\n\n```markdown\n---\ntitle: \"Sobre\"\n---\n\n## Quem somos\n\nDisciplina da FGV focada em **R aplicado** a problemas reais de gestão de dados, com ênfase em qualidade, reprodutibilidade e comunicação.\n\n## Metodologia\n\nAulas expositivas curtas + prática guiada + desafios. Produção de **artefatos reprodutíveis** (scripts R, Quarto, dashboards) e *peer review*.\n\n## Contato\n- Instagram: [@professor.robaina](https://www.instagram.com/professor.robaina)\n- LinkedIn: [diogo.robaina](https://www.linkedin.com/in/diogo.robaina)\n- E-mail: nome@fgv.br"
+  },
+  {
+    "objectID": "index.html#markdown-1",
+    "href": "index.html#markdown-1",
+    "title": "Estrutura do projeto",
+    "section": "markdown",
+    "text": "markdown\ntitle: “Sobre” image: images/foto.jpg ———————-"
+  },
+  {
+    "objectID": "index.html#quem-sou",
+    "href": "index.html#quem-sou",
+    "title": "Estrutura do projeto",
+    "section": "Quem sou",
+    "text": "Quem sou\nSou estudante de [curso/área] na [instituição]. Gosto de resolver problemas reais com dados e tecnologia."
+  },
+  {
+    "objectID": "index.html#trajetória",
+    "href": "index.html#trajetória",
+    "title": "Estrutura do projeto",
+    "section": "Trajetória",
+    "text": "Trajetória\n\n2024–2025: projetos de análise de dados para educação e setor público.\n2023: monitoria de estatística aplicada e participação em grupo de pesquisa."
+  },
+  {
+    "objectID": "index.html#o-que-eu-busco",
+    "href": "index.html#o-que-eu-busco",
+    "title": "Estrutura do projeto",
+    "section": "O que eu busco",
+    "text": "O que eu busco\nParcerias para projetos, estágio/trainee e colaboração em dashboards, data storytelling e IA aplicada.\n\n---\n\n## `aulas.qmd`\n\n```markdown\n---\ntitle: \"Aulas\"\npage-layout: full\n---\n\n&gt; Dica: clique nos botões para abrir **slides**, **.Rmd/.qmd**, **dados**, **vídeo** e **notebook** (quando disponível).\n\n### Semana 01 — Setup e Tidyverse\n&lt;div class=\"aula-card\"&gt;\n  &lt;h5&gt;Instalação, RStudio, Quarto, primeiros scripts&lt;/h5&gt;\n  &lt;p&gt;Estrutura de projeto, reprodutibilidade, leitura de CSV/Excel simples.&lt;/p&gt;\n  &lt;div class=\"aula-actions\"&gt;\n    &lt;a class=\"btn btn-primary\" href=\"#\"&gt;Slides&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-primary\" href=\"#\"&gt;index.qmd&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-primary\" href=\"#\"&gt;Dados&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-secondary\" href=\"#\"&gt;Vídeo&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n### Semana 02 — Importação de Dados\n&lt;div class=\"aula-card\"&gt;\n  &lt;h5&gt;CSV/Excel, APIs (httr), leitura com `readr` e `readxl`&lt;/h5&gt;\n  &lt;p&gt;Boas práticas de *parsing*, encoding, datas e fatores.&lt;/p&gt;\n  &lt;div class=\"aula-actions\"&gt;\n    &lt;a class=\"btn btn-primary\" href=\"#\"&gt;Slides&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-primary\" href=\"#\"&gt;script.R&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-primary\" href=\"#\"&gt;Dados&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-secondary\" href=\"#\"&gt;Vídeo&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n### Semana 03 — Wrangling com dplyr/tidyr\n&lt;div class=\"aula-card\"&gt;\n  &lt;h5&gt;Transformações, joins, pivot, *pipe*&lt;/h5&gt;\n  &lt;p&gt;Construção de *data pipelines* e checagens.&lt;/p&gt;\n  &lt;div class=\"aula-actions\"&gt;\n    &lt;a class=\"btn btn-primary\" href=\"#\"&gt;Slides&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-primary\" href=\"#\"&gt;script.R&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-primary\" href=\"#\"&gt;Dados&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-secondary\" href=\"#\"&gt;Vídeo&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n### Semana 04 — Visualização com ggplot2\n&lt;div class=\"aula-card\"&gt;\n  &lt;h5&gt;Gráficos básicos, *grammar of graphics*, temas&lt;/h5&gt;\n  &lt;p&gt;Exportação de imagens e *Quarto revealjs* para slides.&lt;/p&gt;\n  &lt;div class=\"aula-actions\"&gt;\n    &lt;a class=\"btn btn-primary\" href=\"#\"&gt;Slides&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-primary\" href=\"#\"&gt;script.R&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-primary\" href=\"#\"&gt;Dados&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-secondary\" href=\"#\"&gt;Vídeo&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n### Semana 05 — Estatística aplicada\n&lt;div class=\"aula-card\"&gt;\n  &lt;h5&gt;Médias, variância, testes t (pareado e não pareado), ANOVA&lt;/h5&gt;\n  &lt;p&gt;Relato de resultados em linguagem acessível e *effect size*.&lt;/p&gt;\n  &lt;div class=\"aula-actions\"&gt;\n    &lt;a class=\"btn btn-primary\" href=\"#\"&gt;Slides&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-primary\" href=\"#\"&gt;script.R&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-primary\" href=\"#\"&gt;Dados&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-secondary\" href=\"#\"&gt;Vídeo&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n### Semana 06 — Regressão e Predição\n&lt;div class=\"aula-card\"&gt;\n  &lt;h5&gt;Regressão linear, predição simples, métricas&lt;/h5&gt;\n  &lt;p&gt;Diagnósticos, *train/test*, *cross-validation* simplificada.&lt;/p&gt;\n  &lt;div class=\"aula-actions\"&gt;\n    &lt;a class=\"btn btn-primary\" href=\"#\"&gt;Slides&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-primary\" href=\"#\"&gt;script.R&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-primary\" href=\"#\"&gt;Dados&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-secondary\" href=\"#\"&gt;Vídeo&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n### Semana 07 — Data Storytelling com Quarto\n&lt;div class=\"aula-card\"&gt;\n  &lt;h5&gt;Narrativas, *layouts*, *callouts*, publicação (GitHub Pages)&lt;/h5&gt;\n  &lt;p&gt;Projeto final: relatório + repositório público.&lt;/p&gt;\n  &lt;div class=\"aula-actions\"&gt;\n    &lt;a class=\"btn btn-primary\" href=\"#\"&gt;Slides&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-primary\" href=\"#\"&gt;template.qmd&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-primary\" href=\"#\"&gt;Checklist&lt;/a&gt;\n    &lt;a class=\"btn btn-outline-secondary\" href=\"#\"&gt;Vídeo&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/div&gt;"
+  },
+  {
+    "objectID": "index.html#markdown-2",
+    "href": "index.html#markdown-2",
+    "title": "Estrutura do projeto",
+    "section": "markdown",
+    "text": "markdown\ntitle: “Blog” listing: contents: posts sort: “date desc” type: default categories: true feed: true page-size: 5 ————\nAqui você encontra anotações curtas, estudos e bastidores dos projetos. Não é necessário ter um CMS: os posts abaixo são arquivos .qmd dentro da pasta posts/.\n\n---\n\n## `posts/2025-01-01-post-exemplo.qmd` (opcional)\n\n```markdown\n---\ntitle: \"Meu primeiro post\"\ndate: 2025-01-01\ncategories: [estudos, dados]\nimage: ../images/foto.jpg\n---\n\nEste é um post de exemplo. Você pode escrever em Markdown/Quarto, incluir código, figuras e resultados."
+  },
+  {
+    "objectID": "index.html#como-usar",
+    "href": "index.html#como-usar",
+    "title": "Estrutura do projeto",
+    "section": "Como usar",
+    "text": "Como usar\n\nInstale o Quarto (quarto.org) e, se quiser, R/Python.\nColoque os arquivos nas pastas indicadas e troque Nome do Aluno, foto e descrições.\nNo terminal, dentro de portfolio-aluno/:\n\nquarto preview para visualizar\nquarto publish gh-pages para publicar no GitHub Pages (ou use docs/ com GitHub Pages)"
+  },
+  {
+    "objectID": "index.html#onde-encontro-temas",
+    "href": "index.html#onde-encontro-temas",
+    "title": "Estrutura do projeto",
+    "section": "Onde encontro temas?",
+    "text": "Onde encontro temas?\nNo Quarto, os temas HTML (ex.: flatly, cosmo, minty, darkly, quartz, vapor, zephyr) podem ser definidos no _quarto.yml em format: html: theme:. Você pode combinar um tema + CSS próprio (como neste projeto) para personalizar cores, bordas e tipografia."
+  },
+  {
+    "objectID": "index.html#é-possível-ter-página-de-blog-sem-ter-um-blog",
+    "href": "index.html#é-possível-ter-página-de-blog-sem-ter-um-blog",
+    "title": "Estrutura do projeto",
+    "section": "É possível ter página de blog sem “ter um blog”?",
+    "text": "É possível ter página de blog sem “ter um blog”?\nSim. A página blog.qmd usa listing para listar arquivos .qmd da pasta posts/ — não precisa CMS, banco de dados ou servidor. Basta adicionar novos .qmd em posts/ que o Quarto monta a listagem automaticamente."
+  },
+  {
+    "objectID": "index.html#materiais.qmd",
+    "href": "index.html#materiais.qmd",
+    "title": "Estrutura do projeto",
+    "section": "materiais.qmd",
+    "text": "materiais.qmd\n---\ntitle: \"Materiais\"\n---\n\n### Repositório e templates\n- **Repositório da disciplina**: &lt;https://github.com/fgv-r/disciplina&gt;\n- **Template Quarto** (relatório): `template.qmd`\n- **Checklist de entrega**: `checklist.md`\n\n### Instalação\n- R (CRAN), RStudio, Quarto\n- Pacotes: `tidyverse`, `readxl`, `janitor`, `ggplot2`, `broom`, `knitr`.\n\n### Dados públicos sugeridos\n- IBGE (SIDRA), DataSUS, INEP, Siconfi/Finbra.\n\n&gt; Sempre cite a fonte e a data de extração."
+  },
+  {
+    "objectID": "index.html#avaliacao.qmd",
+    "href": "index.html#avaliacao.qmd",
+    "title": "Estrutura do projeto",
+    "section": "avaliacao.qmd",
+    "text": "avaliacao.qmd\n---\ntitle: \"Avaliação\"\n---\n\n### Critérios (exemplo)\n- **Exercícios** (30%): pontualidade e organização.\n- **Mini-dashboard** (20%): clareza visual e narrativa.\n- **Projeto final** (40%): metodologia, replicabilidade e comunicação.\n- **Participação** (10%).\n\n### Regras\n- Entregas via repositório público (link no e-class).\n- Trabalhos sem fonte de dados e sem instruções de reprodução perdem pontos.\n\n### Rubrica resumida\n| Nível | Indicadores |\n|---|---|\n| Básico | Código roda, mas com organização limitada. |\n| Bom | Estrutura clara, narrativa objetiva, gráficos adequados. |\n| Destaque | Análises que permitem conclusões além do combinado e ótima comunicação. |"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Aqui você encontra anotações curtas, estudos e bastidores dos projetos. Não é necessário ter um CMS: os posts abaixo são arquivos .qmd dentro da pasta posts/.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#objetivo-da-disciplina",
+    "href": "index.html#objetivo-da-disciplina",
+    "title": "Início",
+    "section": "🎯 Objetivo da disciplina",
+    "text": "🎯 Objetivo da disciplina\nCapacitar o estudante a importar, limpar, analisar e comunicar dados em R, com foco em aplicações de gestão pública e negócios."
+  },
+  {
+    "objectID": "index.html#cronograma-resumido",
+    "href": "index.html#cronograma-resumido",
+    "title": "Início",
+    "section": "🗓️ Cronograma resumido",
+    "text": "🗓️ Cronograma resumido\n\n\n\nSemana\nTema\nEntrega\n\n\n\n\n01\nSetup, RStudio/Quarto, tidyverse\n—\n\n\n02\nImportação (CSV, Excel, APIs)\nExercício 1\n\n\n03\nLimpeza e wrangling (dplyr, tidyr)\nExercício 2\n\n\n04\nVisualização (ggplot2)\nMini-dashboard\n\n\n05\nEstatística (médias, testes t, ANOVA)\nLista teórica\n\n\n06\nRegressão e predição\nProjeto parcial\n\n\n07\nQuarto + Data Storytelling\nProjeto final"
+  },
+  {
+    "objectID": "index.html#links-rápidos",
+    "href": "index.html#links-rápidos",
+    "title": "Início",
+    "section": "🔗 Links rápidos",
+    "text": "🔗 Links rápidos\n\nInstagram: @professor.robaina\nLinkedIn: diogo.robaina\nRepositório base (placeholder): https://github.com/fgv-r/disciplina"
+  },
+  {
+    "objectID": "index.html#perguntas-frequentes",
+    "href": "index.html#perguntas-frequentes",
+    "title": "Início",
+    "section": "❓ Perguntas frequentes",
+    "text": "❓ Perguntas frequentes\n\nPreciso saber programar? Não. Começamos do zero.\nFerramentas? R, RStudio e Quarto.\nPosso usar Python? Sim, em projetos finais, desde que a narrativa esteja em Quarto."
+  },
+  {
+    "objectID": "sobre.html",
+    "href": "sobre.html",
+    "title": "Sobre",
+    "section": "",
+    "text": "Disciplina da FGV focada em R aplicado a problemas reais de gestão de dados, com ênfase em qualidade, reprodutibilidade e comunicação."
+  },
+  {
+    "objectID": "sobre.html#quem-somos",
+    "href": "sobre.html#quem-somos",
+    "title": "Sobre",
+    "section": "",
+    "text": "Disciplina da FGV focada em R aplicado a problemas reais de gestão de dados, com ênfase em qualidade, reprodutibilidade e comunicação."
+  },
+  {
+    "objectID": "sobre.html#metodologia",
+    "href": "sobre.html#metodologia",
+    "title": "Sobre",
+    "section": "Metodologia",
+    "text": "Metodologia\nAulas expositivas curtas + prática guiada + desafios. Produção de artefatos reprodutíveis (scripts R, Quarto, dashboards) e peer review."
+  },
+  {
+    "objectID": "sobre.html#contato",
+    "href": "sobre.html#contato",
+    "title": "Sobre",
+    "section": "Contato",
+    "text": "Contato\n\nInstagram: @professor.robaina\nLinkedIn: diogo.robaina\nE-mail: nome@fgv.br"
+  },
+  {
+    "objectID": "aulas.html",
+    "href": "aulas.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Aqui você encontra anotações curtas, estudos e bastidores dos projetos. Não é necessário ter um CMS: os posts abaixo são arquivos .qmd dentro da pasta posts/.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\npost2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntrodução ao R e ao RStudio\n\n\n\naulas\n\nfundamentos\n\n\n\n\n\n\n\n\n\nMar 1, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/post1.html",
+    "href": "posts/post1.html",
+    "title": "Introdução ao R e ao RStudio",
+    "section": "",
+    "text": "Neste primeiro encontro, aprendemos a instalar o R, o RStudio e o Quarto, entendendo como essas ferramentas se conectam para formar um ambiente completo de análise de dados."
+  },
+  {
+    "objectID": "posts/post1.html#bem-vindo-à-disciplina",
+    "href": "posts/post1.html#bem-vindo-à-disciplina",
+    "title": "Introdução ao R e ao RStudio",
+    "section": "",
+    "text": "Neste primeiro encontro, aprendemos a instalar o R, o RStudio e o Quarto, entendendo como essas ferramentas se conectam para formar um ambiente completo de análise de dados."
+  },
+  {
+    "objectID": "posts/post1.html#o-que-foi-visto",
+    "href": "posts/post1.html#o-que-foi-visto",
+    "title": "Introdução ao R e ao RStudio",
+    "section": "🧠 O que foi visto",
+    "text": "🧠 O que foi visto\n\nInstalação do R, RStudio e Quarto\n\nCriação do primeiro script .R e execução de comandos básicos\n\nEstrutura de objetos (vector, data.frame)\n\nSalvando e reabrindo projetos\n\nGerando o primeiro documento .qmd"
+  },
+  {
+    "objectID": "posts/post1.html#trecho-do-código-apresentado",
+    "href": "posts/post1.html#trecho-do-código-apresentado",
+    "title": "Introdução ao R e ao RStudio",
+    "section": "💬 Trecho do código apresentado",
+    "text": "💬 Trecho do código apresentado\n```r # Criando um vetor e calculando média idades &lt;- c(22, 25, 29, 31, 27) media_idades &lt;- mean(idades) media_idades"
+  },
+  {
+    "objectID": "materiais.html",
+    "href": "materiais.html",
+    "title": "Materiais",
+    "section": "",
+    "text": "📘 Livro R for Data Science (2ª edição)   🧩 Cheatsheets do RStudio   🧭 Documentação do Quarto \n\n\n💡 Dica: mantenha esses três links salvos. Eles cobrem praticamente tudo o que você vai precisar — da base conceitual ao código pronto para aplicar em análises e relatórios."
+  },
+  {
+    "objectID": "materiais.html#links-rápidos",
+    "href": "materiais.html#links-rápidos",
+    "title": "Materiais",
+    "section": "",
+    "text": "Repositório da disciplina Templates (Quarto + R) Cheat Sheets R\n\n\nDica: sempre leia o README do repositório. Nele, você encontra instruções atualizadas, prazos e links para dados."
+  },
+  {
+    "objectID": "materiais.html#instalação",
+    "href": "materiais.html#instalação",
+    "title": "Materiais",
+    "section": "Instalação",
+    "text": "Instalação\n\n1) R, RStudio e Quarto\n\nR (CRAN): https://cran.r-project.org/\nRStudio: https://posit.co/download/rstudio-desktop/\nQuarto: https://quarto.org/docs/get-started/"
+  },
+  {
+    "objectID": "materiais.html#links-úteis",
+    "href": "materiais.html#links-úteis",
+    "title": "Materiais",
+    "section": "",
+    "text": "📘 Livro R for Data Science (2ª edição)   🧩 Cheatsheets do RStudio   🧭 Documentação do Quarto \n\n\n💡 Dica: mantenha esses três links salvos. Eles cobrem praticamente tudo o que você vai precisar — da base conceitual ao código pronto para aplicar em análises e relatórios."
+  },
+  {
+    "objectID": "avaliacao.html",
+    "href": "avaliacao.html",
+    "title": "Avaliação",
+    "section": "",
+    "text": "A avaliação da disciplina é composta por dois trabalhos individuais, que devem demonstrar domínio técnico em R, clareza metodológica e capacidade de comunicar resultados de forma objetiva e visual.\n\n\n\n\n\n\n\n\nComponente\nPeso\nDescrição\n\n\n\n\nTrabalho 1 – Análise e Visualização de Dados\n50%\nConstrução de um relatório Quarto contendo importação, limpeza e visualização de dados reais.\n\n\nTrabalho 2 – Projeto Final com Storytelling\n50%\nRelatório narrativo completo, com análise estatística, gráficos, interpretação e comunicação dos resultados.\n\n\n\n\nAmbos os trabalhos são individuais e devem ser entregues em formato .qmd ou .html, com código e comentários incluídos."
+  },
+  {
+    "objectID": "avaliacao.html#estrutura-de-avaliação",
+    "href": "avaliacao.html#estrutura-de-avaliação",
+    "title": "Avaliação",
+    "section": "",
+    "text": "A avaliação da disciplina é composta por dois trabalhos individuais, que devem demonstrar domínio técnico em R, clareza metodológica e capacidade de comunicar resultados de forma objetiva e visual.\n\n\n\n\n\n\n\n\nComponente\nPeso\nDescrição\n\n\n\n\nTrabalho 1 – Análise e Visualização de Dados\n50%\nConstrução de um relatório Quarto contendo importação, limpeza e visualização de dados reais.\n\n\nTrabalho 2 – Projeto Final com Storytelling\n50%\nRelatório narrativo completo, com análise estatística, gráficos, interpretação e comunicação dos resultados.\n\n\n\n\nAmbos os trabalhos são individuais e devem ser entregues em formato .qmd ou .html, com código e comentários incluídos."
+  },
+  {
+    "objectID": "avaliacao.html#entregas",
+    "href": "avaliacao.html#entregas",
+    "title": "Avaliação",
+    "section": "Entregas",
+    "text": "Entregas\nCada trabalho deve conter:\n\nCabeçalho com nome completo, turma e data;\n\nFonte dos dados e data de extração;\n\nCódigo R executável e resultados visíveis;\n\nComentários explicativos e conclusões."
+  },
+  {
+    "objectID": "avaliacao.html#rubrica-de-avaliação",
+    "href": "avaliacao.html#rubrica-de-avaliação",
+    "title": "Avaliação",
+    "section": "Rubrica de Avaliação",
+    "text": "Rubrica de Avaliação\n\n\n\n\n\n\n\nNível\nIndicadores de desempenho\n\n\n\n\nBásico (6–7)\nCódigo funcional, mas com explicação limitada ou estrutura simples.\n\n\nIntermediário (8)\nOrganização adequada, gráficos claros, narrativa coerente e boa aplicação dos conceitos.\n\n\nAvançado (9–10)\nAnálises originais, interpretação consistente e comunicação visual de alta qualidade."
+  },
+  {
+    "objectID": "avaliacao.html#dicas-para-alcançar-destaque",
+    "href": "avaliacao.html#dicas-para-alcançar-destaque",
+    "title": "Avaliação",
+    "section": "Dicas para alcançar destaque",
+    "text": "Dicas para alcançar destaque\n\nConstrua uma narrativa clara: explique cada etapa da análise.\n\nEvite apenas gerar gráficos — interprete os resultados.\n\nUtilize comentários para explicar suas decisões de código.\n\nCite fontes e pacotes usados na análise.\n\nCuide da apresentação visual (títulos, legendas, cores acessíveis).\n\n\n“A clareza da história é tão importante quanto a complexidade do código.”"
+  },
+  {
+    "objectID": "avaliacao.html#contato-e-suporte",
+    "href": "avaliacao.html#contato-e-suporte",
+    "title": "Avaliação",
+    "section": "Contato e suporte",
+    "text": "Contato e suporte\n\nLinkedIn: diogo.robaina\n\nE-mail: nome@fgv.br\n\nPlantão de dúvidas: horários informados em aula e no e-Class"
+  },
+  {
+    "objectID": "avaliacao.html#referências-recomendadas",
+    "href": "avaliacao.html#referências-recomendadas",
+    "title": "Avaliação",
+    "section": "Referências recomendadas",
+    "text": "Referências recomendadas\n\nR for Data Science — Hadley Wickham & Garrett Grolemund (2ª ed.)\n\nStorytelling with Data — Cole Nussbaumer Knaflic\n\nQuarto Documentation — https://quarto.org/docs/"
+  }
+]

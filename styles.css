@@ -1,0 +1,119 @@
+/* =========================
+   ESTILOS GERAIS DO SITE
+   ========================= */
+
+/* Paleta de cores e variáveis */
+:root {
+  --brand: #0f4c81;   /* Azul escuro institucional */
+  --brand-2: #f39c12; /* Laranja destaque */
+  --bg-soft: #f7f9fc; /* Fundo claro */
+}
+
+/* Fundo geral */
+body {
+  background: var(--bg-soft);
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 3px solid var(--brand);
+}
+.navbar-brand,
+.navbar-nav .nav-link {
+  font-weight: 600;
+}
+
+/* =========================
+   SEÇÃO HERO (TOPO DA PÁGINA)
+   ========================= */
+.section-hero {
+  background: none;      /* Removido o fundo azul */
+  color: inherit;
+  padding: 0;            /* Margem neutra */
+  border-radius: 0;
+}
+
+/* =========================
+   KPIs e Indicadores
+   ========================= */
+.kpi {
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px 22px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================
+   BOTÕES DE CHAMADA (CTAs)
+   ========================= */
+.btn-cta {
+  font-weight: 700;
+  padding: 12px 18px;
+  border-radius: 14px;
+  border: 2px solid var(--brand);
+  transition: all 0.2s ease-in-out;
+}
+.btn-cta-primary {
+  background: var(--brand);
+  color: #fff;
+}
+.btn-cta-outline {
+  background: transparent;
+  color: var(--brand);
+}
+.btn-cta:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+/* =========================
+   CARDS DE PROJETOS
+   ========================= */
+.card.project {
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  background: #fff;
+}
+.card.project .card-title {
+  color: var(--brand);
+}
+.card.project a.btn-primary {
+  background: var(--brand);
+  border-color: var(--brand);
+}
+.card.project a.btn-secondary {
+  color: #222;
+  border-color: #ddd;
+}
+
+/* =========================
+   GRADE DE AULAS
+   ========================= */
+.aula-card {
+  border-radius: 16px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  padding: 16px;
+  background: #fff;
+}
+.aula-card h5 {
+  color: var(--brand);
+  margin-bottom: 8px;
+}
+.aula-actions .btn {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+/* =========================
+   RODAPÉ
+   ========================= */
+footer {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  padding: 20px 0;
+}
+
